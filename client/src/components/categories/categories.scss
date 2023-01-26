@@ -1,0 +1,75 @@
+@import "../../styles/colors.scss";
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+  gap: 4em;
+
+  h1 {
+    text-align: center;
+    color: $color-one;
+    font-size: 3rem;
+
+
+    @media (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      padding: 1em;
+    }
+  }
+
+  .selections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    .category {
+      position: relative;
+
+      img {
+        width: 40em;
+        height: 20em;
+        object-fit: cover;
+        border-radius: 0.5em;
+
+        @media (max-width: 700px) {
+          width: 30em;
+          height: 15em;
+        }
+
+        @media (max-width: 500px) {
+          width: 20em;
+          height: 10em;
+        }
+      }
+
+      .button {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        color: $white;
+        letter-spacing: 0.02em;
+        background-color: $color-three;
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.6em 2.4em;
+        font-weight: 700;
+        border-radius: 2em;
+        cursor: pointer;
+
+        @media (max-width: 1200px) {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          background-color: $color-three-hover;
+        }
+      }
+    }
+  }
+}

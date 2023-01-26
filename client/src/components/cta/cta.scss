@@ -1,0 +1,41 @@
+@import "../../styles/colors.scss";
+
+.cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $color-one;
+  padding: 3em;
+  gap: 4em;
+
+  @media (max-width: 700px) {
+    gap: 2em;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 700;
+  }
+
+  button {
+    color: $white;
+    letter-spacing: 0.02em;
+    background-color: $color-three;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1em 4em;
+    font-weight: 700;
+    border-radius: 2em;
+    cursor: pointer;
+
+    @media (max-width: 1200px) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: $color-three-hover;
+    }
+  }
+}

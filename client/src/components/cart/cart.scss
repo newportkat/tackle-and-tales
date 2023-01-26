@@ -1,0 +1,114 @@
+@import "../../styles/colors.scss";
+
+.cart {
+  transition: 1s;
+  z-index: 99;
+  position: absolute;
+  background-color: $color-two;
+  top: 0;
+  right: 0;
+  min-width: 40vw;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+border-radius: 0 0 0 .4em;
+gap: .5em;
+box-shadow: -7px 7px 20px 10px rgba(0,0,0,0.45);
+padding: 2em;
+
+
+
+.close-cart {
+    font-size: 3rem;
+    align-self: center;
+    cursor: pointer;
+    
+    &:hover {
+      color: $color-one-hover;
+    }
+
+}
+  h1 {
+    align-self: center;
+    border-bottom: .1em solid $white;
+    margin-bottom: 1em;
+  }
+
+  .item {
+    display: flex;
+    gap: 1em;
+
+    img {
+      width: 6em;
+      height: 6em;
+      object-fit: cover;
+      border-radius: .4em;
+    }
+
+    .purchase {
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+      h3 {
+      }
+
+      .subtotal {
+
+        display: flex;
+        gap: .5em;
+        p {
+        }
+      }
+
+      .delete {
+        color: $color-one-hover;
+        cursor: pointer;
+         
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .total {
+    align-self: center;
+    text-align: center;
+    h4 {
+    }
+
+    p {
+    }
+  }
+
+  h6 {
+    font-size: 1rem;
+    align-self: center;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-one-hover;
+
+    }
+
+  }
+
+  button {
+    color: $white;
+    letter-spacing: 0.02em;
+    background-color: $color-three;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em 3em;
+    font-weight: 700;
+    border-radius: 2em;
+    cursor: pointer;
+    align-self: center;
+
+    
+    &:hover {
+        background-color: $color-three-hover;
+    }
+  }
+}

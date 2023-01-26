@@ -1,0 +1,54 @@
+@import "../../styles/colors.scss";
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+    
+    .text {
+      display: flex;
+      align-items: center;
+      color: $color-one;
+      gap: 3em;
+
+      @media(max-width: 1200px) {
+        flex-direction: column;
+        margin-top: 2.5em;
+        gap: 1em;
+      }
+
+
+      h1 {
+        font-size: 4rem;
+        text-align: right;
+        padding: 1em;
+         
+        @media(max-width: 1200px) {
+        font-size: 2.5rem;
+        padding: 0;
+      }
+
+      }
+
+      p {
+        padding: 1em;
+        font-size: 1.2rem;
+        line-height: 2em;
+        max-width: 40em;
+  
+      }
+    
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    padding: 3em;
+
+  }
+}

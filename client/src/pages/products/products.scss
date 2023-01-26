@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+
+.products {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+
+    .sort {
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+        color: $color-one;
+
+        h2 {
+            text-align: center;
+            
+        }
+
+        .inputItem {
+            display: flex;
+            align-items: center;
+            gap: .2em;
+
+            input {
+                accent-color: $color-two;
+            }
+
+            label {}
+        }
+    }
+
+}

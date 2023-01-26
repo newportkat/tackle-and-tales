@@ -1,0 +1,26 @@
+@import "../../styles/colors.scss";
+
+.banner {
+    background-color: $color-seven;
+    color: $color-one;
+    text-align: center;
+    padding: 1em;
+
+    .ad {
+
+        
+        p {
+
+            font-weight: 700;
+
+            
+        }
+        
+        span {
+
+            font-weight: 400;
+
+            
+        }
+    }
+}

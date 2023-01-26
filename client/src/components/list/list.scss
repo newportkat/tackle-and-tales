@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5em;
+    flex-wrap: wrap;
+
+    @media(max-width: 700px) {
+        gap: 2em;
+    }
+}

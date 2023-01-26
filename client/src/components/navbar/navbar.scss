@@ -1,0 +1,164 @@
+@import "../../styles/colors.scss";
+
+.navbar {
+  position: relative;
+
+
+  .popout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: $color-two;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+
+    .header {
+      color: $white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 0.02em;
+      }
+
+      .menu-links {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+
+        .menu-link {
+          color: $white;
+          font-weight: 500;
+          width: fit-content;
+
+          &:hover {
+            color: $color-one-hover;
+          }
+        }
+      }
+
+      .close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .x {
+          font-size: 3rem;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-one-hover;
+          }
+        }
+      }
+    }
+
+    .menu-logo {
+      margin: auto auto 5% auto;
+
+      img {
+        max-width: 15em;
+      }
+    }
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $white;
+    background-color: $color-one;
+    padding: 2em;
+
+    .outside {
+      visibility: hidden;
+
+      .inside {
+        cursor: pointer;
+        font-size: 2rem;
+      }
+      &:hover {
+        color: $color-one-hover;
+      }
+      @media (max-width: 600px) {
+        visibility: visible;
+      }
+    }
+
+    .logo {
+      img {
+        width: 20em;
+        @media (max-width: 600px) {
+          width: 12em;
+        }
+      }
+    }
+
+    .shopping {
+      position: relative;
+
+      .bag {
+        cursor: pointer;
+        font-size: 2rem;
+
+        &:hover {
+          color: $color-one-hover;
+        }
+      }
+
+      .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: $color-five;
+        width: 1.3em;
+        height: 1.3em;
+        border-radius: 3em;
+        top: -20%;
+        right: -30%;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: $color-two;
+    font-size: 1.2rem;
+    gap: 10em;
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+    gap: 3em;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    .link {
+      color: $white;
+      letter-spacing: 0.02em;
+
+      &:hover {
+        color: $color-one-hover;
+      }
+    }
+  }
+}

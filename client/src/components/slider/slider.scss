@@ -1,0 +1,79 @@
+@import "../../styles/colors.scss";
+
+.slider {
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    transition: all 1s ease;
+
+    .slide {
+      position: relative;
+      img {
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      button {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: $white;
+        letter-spacing: 0.02em;
+        background-color: $color-three;
+        border: none;
+        font-size: 1.2rem;
+        padding: 1em 4em;
+        font-weight: 700;
+        border-radius: 2em;
+        cursor: pointer;
+
+        @media(max-width: 1200px) {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          background-color: $color-three-hover;
+        }
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 70%;
+
+    .icon {
+      width: 3em;
+      height: 3em;
+      background-color: $white;
+      border-radius: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 1;
+      transition: 1s ease;
+
+      .arrows {
+        font-size: 2rem;
+        color: $color-one;
+      }
+    }
+  }
+}

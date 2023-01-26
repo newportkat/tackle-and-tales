@@ -1,0 +1,81 @@
+@import "../../styles/colors.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-one;
+  color: $white;
+
+  .links {
+    display: flex;
+    padding: 2em;
+    gap: 4em;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: .5em;
+
+      .link {
+        color: $white;
+        &:hover {
+            color: $color-one-hover;
+          }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: .5em;
+
+      .link {
+        color: $white;
+        &:hover {
+            color: $color-one-hover;
+          }
+      }
+    }
+  }
+
+  .payments {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+    border-top: .1em solid $white;
+
+
+    .icons {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+
+        .option {
+          width: 3em;
+        }
+    }
+  }
+
+  .conditions {
+    color: $color-one;
+    background-color: $color-seven;
+    width: 100%;
+    display: flex;
+    padding: 1em 10%;
+    gap: 4em;
+
+    p {
+      margin-right: auto;
+    }
+
+    .terms {
+
+      &:hover{color: $color-two-hover;}
+    }
+  }
+}
